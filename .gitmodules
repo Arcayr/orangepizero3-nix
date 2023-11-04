@@ -1,0 +1,8 @@
+[submodule "src/linux-orangepi"]
+	path = src/linux-orangepi
+	url = https://github.com/orangepi-xunlong/linux-orangepi.git
+	branch = orange-pi-6.1-sun50iw9
+[submodule "src/u-boot-orangepi"]
+	path = src/u-boot-orangepi
+	url = https://github.com/orangepi-xunlong/u-boot-orangepi.git
+	branch = v2021.07-sunxi

@@ -17,8 +17,8 @@ kernel source and uboot configuration for linux 6.1.31 for the orange pi zero 3.
 
 ## sources
 
-kernel tree: https://github.com/orangepi-xunlong/linux-orangepi/commit/3495b5ee0594566c9fed930b96b1cae90600412e
-uboot tree: https://github.com/orangepi-xunlong/u-boot-orangepi/commit/6fe17fac388aad17490cf386578b7532975e567f
+* kernel tree: https://github.com/orangepi-xunlong/linux-orangepi/commit/3495b5ee0594566c9fed930b96b1cae90600412e
+* uboot tree: https://github.com/orangepi-xunlong/u-boot-orangepi/commit/6fe17fac388aad17490cf386578b7532975e567f
 
 ## usage
 
@@ -65,7 +65,7 @@ here's a snapshot of my own configuration, which should be a good starting point
 then you can build the sd image with `nix build .#<configuration name>.config.system.build.sdImage`.
 
 **for the defconfig**
-use [`pkgs/linux/linux_sunxi64_defconfig`](./pkgs/linux/linux_sunxi64_defconfig). the vendor-provided one is short a bunch of things.
+use [`pkgs/linux/sun50iw9_defconfig`](./pkgs/linux/sun50iw9_defconfig). the vendor-provided one is short a bunch of things.
 
 ## contributing
 
@@ -75,6 +75,6 @@ if you have a forgejo instance, or access to one, you can fork and submit patche
 
 everything outside of `src/` is agpl licensed except the defconfig.
 
-`pkgs/linux/linux_sunxi64_defconfig` is the same license as the linux kernel.
+`pkgs/linux/sun50iw9_defconfig` is the same license as the linux kernel.
 
 directories in `src/` contain their own licenses, as they are verbatim copies of the upstream sources.

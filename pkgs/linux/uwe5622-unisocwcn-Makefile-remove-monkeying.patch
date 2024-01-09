@@ -1,0 +1,15 @@
+--- a/drivers/net/wireless/uwe5622/unisocwcn/Makefile	1970-01-01 00:00:01.000000000 +1000
++++ b/drivers/net/wireless/uwe5622/unisocwcn/Makefile	1970-01-01 00:00:01.000000000 +1000
+@@ -129,9 +129,9 @@
+ ccflags-y += -DCONFIG_WCN_UTILS
+ 
+ #### include path ######
+-ccflags-y += -I$(src)/include/
+-ccflags-y += -I$(src)/platform/
+-ccflags-y += -I$(src)/platform/rf/
++ccflags-y += -I$(srctree)/drivers/net/wireless/uwe5622/unisocwcn/include/
++ccflags-y += -I$(srctree)/drivers/net/wireless/uwe5622/unisocwcn/platform/
++ccflags-y += -I$(srctree)/drivers/net/wireless/uwe5622/unisocwcn/platform/rf/
+ 
+ #### add cflag for Customer ######
+ ### ---------- Hisilicon start ---------- ###

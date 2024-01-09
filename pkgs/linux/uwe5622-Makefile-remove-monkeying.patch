@@ -1,0 +1,11 @@
+--- a/drivers/net/wireless/uwe5622/Makefile	2024-01-03 18:41:19.354245419 +1100
++++ b/drivers/net/wireless/uwe5622/Makefile	2024-01-03 18:42:08.417598486 +1100
+@@ -2,7 +2,7 @@
+ obj-$(CONFIG_WLAN_UWE5622)    += unisocwifi/
+ obj-$(CONFIG_TTY_OVERY_SDIO)  += tty-sdio/
+ 
+-UNISOCWCN_DIR := $(shell cd $(src)/unisocwcn/ && /bin/pwd)
++UNISOCWCN_DIR := $(srctree)/drivers/net/wireless/uwe5622/unisocwcn/
+-UNISOC_BSP_INCLUDE := $(UNISOCWCN_DIR)/include
++UNISOC_BSP_INCLUDE := $(srctree)/drivers/net/wireless/uwe5622/unisocwcn/include/
+ export UNISOC_BSP_INCLUDE

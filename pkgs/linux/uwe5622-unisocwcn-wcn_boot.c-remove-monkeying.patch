@@ -1,0 +1,13 @@
+--- a/drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_boot.c 1970-01-01 00:00:01.000000000 +1000
++++ b/drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_boot.c 1970-01-01 00:00:01.000000000 +1000
+@@ -100,8 +100,8 @@
+ #define UNISOC_FW_PATH_DEFAULT "/system/etc/firmware/"
+ #endif
+ static char *wcn_fw_path[WCN_FW_MAX_PATH_NUM] = {
+-	UNISOC_FW_PATH_DEFAULT,		/* most of projects */
+-	"/lib/firmware/"		/* allwinner r328... */
++	UNISOC_FW_PATH_DEFAULT,				/* most of projects */
++	"/run/current-system/firmware/"	/* allwinner r328... */
+ };
+ #define WCN_FW_NAME	"wcnmodem.bin"
+ #define GNSS_FW_NAME	"gnssmodem.bin"
